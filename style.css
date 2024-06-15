@@ -2,6 +2,7 @@
 :root{
     --bg-header: #0C2C43;
     --white :#ffffff;
+    --como-green:#54816d;
 }
 *{
     font-family: 'Montserrat', sans-serif;
@@ -9,6 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
+    text-decoration: none;
 
 } 
 header{
@@ -33,22 +35,25 @@ nav .nav-links{
     text-decoration: none;
     color: var(--white);
 }
+.nav-links li a:hover{
+     border-bottom: 5px solid var(--como-green);
+}
 nav div img{
     width: 70px;
 }
 
-#heros{
+.heros{
     background-image: url('images/Section-Heros.png');
      background-size: cover;
      background-repeat: no-repeat; 
      height: 70vh;
      /* opacity: 200%; */
 }
-#heros h1{
+.heros h1{
     color: var(--white);
     padding: 100px 100px 15px;
 }
-#heros p{
+.heros p{
     color:var(--white);
     padding-left: 100px;
 }
@@ -60,32 +65,33 @@ nav div img{
     border: none;
     padding: 12px;
     border-radius: 8px;
+    cursor: pointer;
 }
 /* section service */
-#Services{
+#services{
     width: 90%;
     margin: 0 auto;
     padding: 100px 0px 100px;
 }
-#Services h1{
+#services h1{
     text-align: center;
     color: var(--bg-header);
     font-size: 40px;
 }
-#Services .nos-service {
+#services .nos-service {
     display: flex;
     justify-content: space-around;
     margin-top:30px ;
 }
-#Services .nos-service div img{
+#services .nos-service div img{
     width: 200px;
 }
-#Services .nos-service .item{
+#services .nos-service .item{
    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
    height: 300px;
    text-align: center;
    background: var(--white);
-   width: 400px;
+   width: 380px;
   
 }
 /* section apropos de nous */
@@ -144,7 +150,7 @@ nav div img{
     height: 300px;
     text-align: center;
     background: var(--white);
-    width: 400px;
+    width: 355px;
    
 }
 img[alt="etoile"]{
@@ -156,14 +162,15 @@ img[alt="etoile"]{
 }
 .client p{
     margin-bottom: 10px;
-    font-size: 15px;
-
+    font-size: 14px;
+    text-align: left;
+    padding: 0 0px 0 20px;
 }
 
 /* section contactez-nous */
 #coordonnes{
     background-color: var(--bg-header);
-    height: 90vh;
+   padding-bottom: 60px;
 }
 #coordonnes h1{
     text-align: center;
@@ -229,6 +236,7 @@ form input[type="submit"]{
     border-radius: 5px;
     border: none;
     margin-top: 15px;
+    cursor: pointer;
 }
 .mail{
     display: flex;
@@ -239,4 +247,94 @@ form input[type="submit"]{
     gap: 5px;
     margin-top: 5px;
 }
+footer{
+    background-color: var(--como-green);
+}
+.footer-contenu{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    padding: 18px 0 18px;
+}
+.footer-contenu a{
+    color: var(--bg-header);
+    font-weight: bold;
+}
+.footer-contenu p{
+    color: var(--bg-header);
+    font-weight: bold;
+}
 
+
+/* responsivite */
+
+.toggle_menu {
+    display: none;
+    
+}
+/* Responsive */
+@media (max-width:964px) {
+    header nav .nav-links {
+        display: none;
+    }
+    nav {
+        padding: 0 20px;
+    }
+   
+    .toggle_menu {
+        display: flex;
+        height: 40px;
+        width: 40px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+    }
+    .toggle_menu::before {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 28px;
+        background-color: var(--white);
+        border-radius: 6px;
+        box-shadow: 0 10px 0 var(--white);
+        transform: translateY(-10px);
+        transition: 0.5s;
+    }
+    .toggle_menu.active::before {
+        transform: translateY(0) rotate(135deg);
+        box-shadow: 0 0 0 #000000
+    }
+    .toggle_menu::after {
+        position: absolute;
+        content: "";
+        height: 3px;
+        width: 28px;
+        background-color: var(--white);
+        border-radius: 6px;
+        transform: translateY(10px);
+        transition: 0.5s;
+    }
+    .toggle_menu.active::after {
+        transform: translateY(0) rotate(-135deg);
+      
+    }
+    header nav .nav-links.responsive {
+        display: flex;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--bg-header);
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        flex-direction: column;
+    }
+    header nav .nav-links.responsive li {
+        margin: 15px 0;
+    }
+
+}
