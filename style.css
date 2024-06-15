@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --bg-header: #0C2C43;
+    --white :#ffffff;
+}
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+
+} 
+header{
+    margin: 0 auto;
+    width: 100%;
+    background-color: var(--bg-header);
+    padding: 12px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+nav .nav-links{
+    display: flex;
+   gap: 50px;
+   align-items: center;
+}
+.nav-links li, .nav-links li a{
+    list-style: none;
+    text-decoration: none;
+    color: var(--white);
+}
+nav div img{
+    width: 70px;
+}
+
+#heros{
+    background-image: url('images/Section-Heros.png');
+     background-size: cover;
+     background-repeat: no-repeat; 
+     height: 70vh;
+     /* opacity: 200%; */
+}
+#heros h1{
+    color: var(--white);
+    padding: 100px 100px 15px;
+}
+#heros p{
+    color:var(--white);
+    padding-left: 100px;
+}
+.contact{
+    background-color: var(--white);
+    color: var(--bg-header);
+    margin-left: 100px;
+    margin-top: 50px;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+}
+/* section service */
+#Services{
+    width: 90%;
+    margin: 0 auto;
+    padding: 100px 0px 100px;
+}
+#Services h1{
+    text-align: center;
+    color: var(--bg-header);
+    font-size: 40px;
+}
+#Services .nos-service {
+    display: flex;
+    justify-content: space-around;
+    margin-top:30px ;
+}
+#Services .nos-service div img{
+    width: 200px;
+}
+#Services .nos-service .item{
+   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+   height: 300px;
+   text-align: center;
+   background: var(--white);
+   width: 400px;
+  
+}
+/* section apropos de nous */
+#apropos{
+    width: 90%;
+    margin: 0 auto;
+}
+#apropos h1{
+    text-align: center;
+    font-size: 40px;
+    color: var(--bg-header);
+}
+.apropos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+.apropos .right{
+    position: relative;
+}
+.apropos .right img{
+    width: 500px;
+    border-radius: 8px;
+}
+.apropos .left {
+    border: 1px solid #444;
+    padding: 25px;
+    line-height: 30px;
+    border-radius: 8px;
+}
+/* section clients */
+#clients{
+    width: 90%;
+    margin: 0 auto;
+}
+.temoin{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 70%;
+}
+#clients h1{
+    text-align: center;
+    font-size: 50px;
+    color: var(--bg-header);
+    margin-top: 40px;
+}
+#clients .nos-clients{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+#clients .nos-clients .client{
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    height: 300px;
+    text-align: center;
+    background: var(--white);
+    width: 400px;
+   
+}
+img[alt="etoile"]{
+    width: 25%;
+    /* margin-top: 15px; */
+}
+.client h4{
+    margin-bottom: 8px;
+}
+.client p{
+    margin-bottom: 10px;
+    font-size: 15px;
+
+}
+
+/* section contactez-nous */
+#coordonnes{
+    background-color: var(--bg-header);
+    height: 90vh;
+}
+#coordonnes h1{
+    text-align: center;
+    font-size: 40px;
+    color: var(--white);
+    padding-top: 50px;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container form label{
+    display: block;
+    color: var(--white);
+   
+}
+.container form input[type="text"], form input[type="email"]{
+    width: 470px;
+    height: 60px;
+    margin-bottom: 20px;
+    
+}
+.container form textarea{
+    width: 470px;
+    height: 150px;
+    resize: none;
+}
+.container .left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+}
+.container .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+}
+.container .right h4{
+    color: var(--white);
+    font-weight: normal;
+
+    
+}
+img[alt="mail"], img[alt="phone"]{
+    width: 20px;
+}
+iframe{
+    width: 500px;
+    height: 400px;
+    margin-top: 10px;
+}
+form input[type="submit"]{
+    width: 150px;
+    height: 50px;
+    color: var(--bg-header);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    margin-top: 15px;
+}
+.mail{
+    display: flex;
+    gap: 5px;
+}
+.phone{
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
