@@ -338,3 +338,20 @@ footer{
     }
 
 }
+@media ( max-width:1280px){
+   #services .nos-service{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   #services .nos-service .item{
+    margin-bottom: 15px;
+   }
+   #clients .nos-clients{
+    display: flex;
+    flex-wrap: wrap;
+   
+   }
+   #clients .nos-clients .client{
+    margin-bottom: 15px;
+   }
+}
