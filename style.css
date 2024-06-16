@@ -354,4 +354,34 @@ footer{
    #clients .nos-clients .client{
     margin-bottom: 15px;
    }
+   .apropos {
+    display: flex;
+    flex-direction: column;
+   
+   }
+   .apropos .right img{
+    width: 400px;
+    height: 300px;
+   }
+   iframe{
+    width: 390px;
+   }
+   .container{
+    /* display: flex; */
+    flex-wrap: wrap;
+  
+   
+   }
+}
+@media ( max-width:541px){
+    .container{
+        /* display: flex; */
+        flex-wrap: wrap;
+    }   
+    .container form input[type="text"], .container form input[type="email"]{
+        width: 390px;
+    }
+    .container form textarea{
+        width: 390px;
+    }
 }
