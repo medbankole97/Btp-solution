@@ -8,3 +8,6 @@ small_menu.onclick = function(){
 }
 
 // validité des champs input
+
+
+

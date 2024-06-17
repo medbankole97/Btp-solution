@@ -445,5 +445,44 @@ footer{
     }
 }
 @media ( max-width:420px){
-    
+    .container form input[type="text"], .container form input[type="email"]{
+        width: 300px;
+       
+    }
+    .container form textarea{
+        width: 300px;
+    }
+    .heros h1{
+        color: var(--white);
+        padding: 100px 30px 15px;
+        font-size: 25px;
+    }
+    .heros p{
+        color: var(--white);
+        padding: 20px 30px 15px;
+        font-size: 19px;
+    }
+    .apropos .left p{
+        font-size: 14px;
+    } 
+    #services .nos-service .item p{
+        font-size: 10px;
+    }
+    #clients .nos-clients .client p{
+        font-size: 10px;
+    }
+    iframe{
+        width: 250px;
+    }
+    .apropos .right img{
+        width: 250px;
+        height: 200px;
+    }
+    .apropos .left p{
+        font-size: 12px;
+    }
+    .apropos .left{
+        width: 100%;
+        height: 20%;
+    }
 }
