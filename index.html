@@ -99,19 +99,25 @@
         <div class="left">
             <form action="#" id="contactForm">
                 <div>
-                    <label for="Nom">Nom</label>
-                    <input type="text" name="Nom" id="Nom" placeholder="Enter votre nom" required>
+                    <label for="nom">Nom</label>
+                    <input type="text" name="nom" id="nom" placeholder="Entrez votre nom" required>
+                    <span id="errorName" class="error"></span>
                 </div>
                 <div>
-                    <label for="E-mail">E-mail</label>
-                    <input type="email" id="E-mail" name="E-mail" placeholder="votre e-mail" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Entrez votre e-mail" required>
+                    <span id="errorEmail" class="error"></span>
                 </div>
                 <div>
-                    <label for="Message">Message</label>
-                    <textarea name="Message" id="Message" placeholder="Entrer votre Message"></textarea>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Entrez votre message" required></textarea>
+                    <span id="errorMessage" class="error"></span>
                 </div>
-                <input type="submit" value="ENVOYER">
+                <div>
+                    <input type="submit" value="ENVOYER">
+                </div>
             </form>
+        
         </div>
         <div class="right">
             <div class="mail">

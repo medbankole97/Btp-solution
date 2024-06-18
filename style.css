@@ -280,6 +280,9 @@ form input[type="submit"]{
     margin-top: 15px;
     cursor: pointer;
 }
+span{
+    color: red;
+}
 .mail{
     display: flex;
     gap: 5px;
@@ -447,10 +450,15 @@ footer{
 @media ( max-width:420px){
     .container form input[type="text"], .container form input[type="email"]{
         width: 300px;
+        /* margin-left: 40px; */
        
+    }
+    .container form label{
+        margin-left: 40px;
     }
     .container form textarea{
         width: 300px;
+        /* margin-left: 40px; */
     }
     .heros h1{
         color: var(--white);
@@ -472,7 +480,8 @@ footer{
         font-size: 10px;
     }
     iframe{
-        width: 250px;
+        width: 290px;
+        /* margin-left: 40px; */
     }
     .apropos .right img{
         width: 250px;
@@ -480,9 +489,13 @@ footer{
     }
     .apropos .left p{
         font-size: 12px;
+        line-height: normal;
     }
-    .apropos .left{
+    /* .apropos .left{
         width: 100%;
         height: 20%;
     }
+    .contact{
+      
+    } */
 }
