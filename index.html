@@ -5,23 +5,25 @@
     <meta name="description" content="BTP Solution offre des services de construction innovants et durables.">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="BTP-SOLUTIONS">
-    <link rel="shortcut icon" href="images/images/BTP-Solutions_Logo.png" type="image/x-icon">
-    <title>BTP Solutions - Services de Construction et Travaux Publics</title>
     <meta charset="UTF-8">
+    <title>BTP Solutions - Services de Construction et Travaux Publics</title>
+    <link rel="shortcut icon" href="images/images/BTP-Solutions_Logo.png" type="image/x-icon">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="style.css"  media="all">
+    <link rel="stylesheet" href="style.css" media="print" onload="this.onload=null;this.media='all'">
 
 </head>
 <body>
     <header>
-        <nav>
+        <nav  aria-label="Navigation principale">
             <div>
                 <img src="images/images/BTP-Solutions_Logo.png" alt="logo-entreprise">
             </div>
             <ul class="nav-links">
-               <li> <a href="#heros">Accueil</a></li>    
-               <li> <a href="#services">Services</a></li> 
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#coordonnes">Contact</a></li> 
+               <li> <a href="#heros" aria-label="Accueil">Accueil</a></li>    
+               <li> <a href="#services" aria-label="Services">Services</a></li> 
+                <li><a href="#apropos"   aria-label="À propos">À propos</a></li>
+                <li><a href="#coordonnes"  aria-label="Contact">Contact</a></li> 
               
             </ul>  
             <div class="toggle_menu"></div>  
@@ -43,17 +45,17 @@
         <h1> NOS SERVICES</h1>
         <div class="nos-service">
             <div class="item">
-                <img src="images/images/service-1.webp" alt="service-1">
+                <img src="images/images/service-1.webp" alt="service-1" loading="lazy">
                 <h4>Construction de bâtiments</h4>
                 <p> Des constructions robustes et esthétiques pour tous vos besoins résidentiels,commerciaux et  industriels.</p>
             </div>
             <div class="item">
-                <img src="images/images/service-2.webp" alt="service-2">
+                <img src="images/images/service-2.webp" alt="service-2" loading="lazy">
                 <h4>Travaux publics</h4>
                 <p>Des infrastructures publiques fiables et durables, incluant routes, ponts et aménagements urbains.</p>
             </div>
             <div class="item">
-                <img src="images/images/service-3.webp" alt="service-3">
+                <img src="images/images/service-3.webp" alt="service-3" loading="lazy">
                 <h4>Rénovation et réhabilitation</h4>
                 <p>Redonnez vie à vos bâtiments avec nos solutions de rénovation complètes et innovantes.</p>
             </div>
@@ -69,7 +71,7 @@
               <p>BTP Solutions est une entreprise de Bâtiment et Travaux <br> Publics dédiée à la réalisation de projets d'infrastructures de <br> haute qualité. Avec une équipe d'experts passionnés et <br> expérimentés, nous nous engageons à fournir des solutions <br> innovantes et durables pour répondre aux besoins de nos clients.</p>
           </div>
           <div class="right"> 
-              <img src="images/images/image-apropos-de-nous.png" alt="a propos de nous">
+              <img src="images/images/image-apropos-de-nous.png" alt="a propos de nous" loading="lazy">
           </div>
       </div>
    </section>
@@ -77,22 +79,22 @@
     <h1>CE QUE DISENT NOS CLIENTS</h1>
     <div class="nos-clients">
         <div class="client">
-            <img src="images/images/temoin2.webp" alt="temoignage1" class="temoin">
+            <img src="images/images/temoin2.webp" alt="temoignage1" class="temoin" loading="lazy">
             <h4>Victoria</h4>
             <p>Grâce à BTP Solutions, notre nouveau siège social  est  un véritable succès. Leur  profes-sionnalisme  et leur  souci du détail ont été remarquables.</p>
-            <img src="images/images/Etoile.png" alt="etoile">
+            <img src="images/images/Etoile.png" alt="etoile" loading="lazy">
         </div>
         <div class="client">
-            <img src="images/images/temoin6.JPG" alt="temoignage2" class="temoin">
+            <img src="images/images/temoin6.JPG" alt="temoignage2" class="temoin" loading="lazy">
             <h4>Nicolas</h4>
             <p>Les travaux de rénovation de notre école ont été  réalisés avec une grande précision et dans les délais impartis. Merci à toute l'équipe de BTP Solutions.</p>
             <img src="images/images/Etoile.png" alt="etoile">
         </div>
         <div class="client">
-            <img src="images/images/temoin7.jpg" alt="temoignage3" class="temoin">
+            <img src="images/images/temoin7.jpg" alt="temoignage3" class="temoin" loading="lazy">
             <h4>Mohamed</h4>
             <p>La nouvelle route construite par BTP Solutions a considérablement amélioré la circulation dans   notre commune. Une entreprise que je <br> recommande vivement.</p>
-            <img src="images/images/Etoile.png" alt="etoile">
+            <img src="images/images/Etoile.png" alt="etoile" loading="lazy">
         </div>
 
     </div>
@@ -125,14 +127,14 @@
         </div>
         <div class="right">
             <div class="mail">
-                <img src="images/images/mail-image.png" alt="mail">
+                <img src="images/images/mail-image.png" alt="mail" loading="lazy">
                 <h4>Adresse email : contact@btpsolutions.com</h4>
             </div>
             <div class="phone">
-                <img src="images/images/el_phone-alt.png" alt="phone">
+                <img src="images/images/el_phone-alt.png" alt="phone" loading="lazy">
                 <h4>Numéro de téléphone : +123 456 7890</h4>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10678.644045386636!2d0.16097026850849075!3d48.000937989656435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e288acaaaf7e63%3A0x5004874b893fa052!2sLes%20Ardriers%2C%2072000%20Le%20Mans%2C%20France!5e0!3m2!1sfr!2s!4v1718448826862!5m2!1sfr!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10678.644045386636!2d0.16097026850849075!3d48.000937989656435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e288acaaaf7e63%3A0x5004874b893fa052!2sLes%20Ardriers%2C%2072000%20Le%20Mans%2C%20France!5e0!3m2!1sfr!2s!4v1718448826862!5m2!1sfr!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" loading="lazy"></iframe>
         </div>
 
     </div>
