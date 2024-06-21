@@ -54,13 +54,13 @@ nav div img{
 .heros h1{
     color: var(--white);
     padding: 100px 100px 15px;
-    font-size: 40px;
-    width: 80%;
+    font-size: 50px;
+    width: 90%;
 }
 .heros p{
     color:var(--white);
     padding-left: 100px;
-    font-size: 20px;
+    font-size: 30px;
 }
 .contact{
     background-color: var(--white);
@@ -124,9 +124,6 @@ nav div img{
     align-items: center;
     padding: 50px;
 }
-.apropos .right{
-    position: relative;
-}
 .apropos .right img{
     width: 500px;
     border-radius: 8px;
@@ -137,6 +134,7 @@ nav div img{
     padding: 25px;
     line-height: 30px;
     border-radius: 8px;  
+    margin-bottom: 30px;
 }
 /* section clients */
 #clients{
@@ -166,7 +164,7 @@ nav div img{
     height: 300px;
     text-align: center;
     background: var(--white);
-    width: 355px;
+    width: 380px;
 }
 #clients .nos-clients .client p{
     font-size: 14px;
@@ -307,15 +305,174 @@ footer{
     display: flex;
     gap: 20px;
 }
-
-
-
 /* responsivite */
 
 .toggle_menu {
     display: none;  
 }
 /* Responsive */
+@media ( max-width:1280px){
+    #services .nos-service{
+     display: flex;
+     flex-wrap: wrap;
+    }
+    #services .nos-service .item{
+     margin-bottom: 40px;
+    }
+    #clients .nos-clients{
+     display: flex;
+     flex-wrap: wrap;
+    }
+    #clients .nos-clients .client{
+     margin-bottom: 40px;
+    }
+    .apropos {
+     display: flex;
+     flex-direction: column;
+    }
+    .apropos .right img{
+     width: 350px;
+     height: 300px;
+    }
+    iframe{
+     width: 470px;
+     border-radius: 4px;
+    }
+    .container{
+     flex-wrap: wrap;
+     justify-content: center;
+    } 
+ #clients .nos-clients{
+     justify-content: center;
+     /* align-items: center; */
+     width: 100%;
+ }
+ #clients .nos-clients .client{
+   
+ }
+ #heros h1{
+    font-size: 23px; 
+ }
+ }
+@media ( max-width:541px){
+    .container{
+        flex-wrap: wrap;
+    }   
+    .container form input[type="text"], .container form input[type="email"]{
+        width: 390px;
+    }
+    iframe{
+        width: 390px;
+    }
+    .container form textarea{
+        width: 390px;
+    }
+    .heros h1{
+        color: var(--white);
+        padding: 100px 30px 15px;
+        font-size: 25px;
+    }
+    .heros p{
+        color: var(--white);
+        padding: 20px 30px 15px;
+        font-size: 19px;
+    }
+    .apropos .left p{
+        font-size: 14px;
+    }
+    .footer-contenu{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .link-reseau{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .copyright{
+        border-bottom: 1px solid var(--white);
+    }
+    .contact{
+       
+  margin-left: 30px;
+
+    }
+    .apropos .right img{
+        width: 400px;
+        height: 300px;
+    }
+    .apropos .left {
+        width: 384px;
+        height: 255px;
+    }
+    .apropos .left p{
+        font-size: 14px;
+        line-height: 1.4;   
+    }
+}
+@media ( max-width:420px){
+    .container form input[type="text"], .container form input[type="email"]{
+        width: 300px;
+    }
+    .container form textarea{
+        width: 300px;
+    }
+    .heros h1{
+        color: var(--white);
+        padding: 100px 30px 15px;
+        font-size: 25px;
+    }
+    .heros p{
+        color: var(--white);
+        padding: 20px 30px 15px;
+        font-size: 19px;
+    }
+    .apropos .left p{
+        font-size: 14px;
+    } 
+    #services .nos-service .item p{
+        font-size: 10px;
+    }
+    #clients .nos-clients .client p{
+        font-size: 10px;
+    }
+    iframe{
+        width: 300px;
+    }
+    .apropos .right img{
+        width: 250px;
+        height: 200px;
+    }
+    .apropos .left p{
+        font-size: 12px;
+        line-height: normal;
+    }
+    .mail{
+        font-size: 12px;
+    }
+    .phone{
+        font-size: 12px;
+    }
+    .mail img{
+        width: 15px;
+    }
+    .phone img{
+        width: 15px;
+    }
+    .footer-contenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+    .link-reseau{
+        display: flex;
+        flex-direction: column; 
+    }
+}
 @media (max-width:964px) {
     header nav .nav-links {
         display: none;
@@ -371,166 +528,17 @@ footer{
         align-items: center;
         justify-content: center;
         background-color: var(--bg-header);
+        opacity: 95%;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        flex-direction: column;
+        flex-direction: column;  
     }
     header nav .nav-links.responsive li {
         margin: 15px 0;
-     
     }
-    nav .nav-links{
+    nav .nav-links.responsive{
         display: flex;
-       gap: 10px;
+       gap: 0px;
       padding: 55px;
-    }
-}
-@media ( max-width:1280px){
-   #services .nos-service{
-    display: flex;
-    flex-wrap: wrap;
-   }
-   #services .nos-service .item{
-    margin-bottom: 40px;
-   }
-   #clients .nos-clients{
-    display: flex;
-    flex-wrap: wrap;
-   }
-   #clients .nos-clients .client{
-    margin-bottom: 40px;
-   }
-   .apropos {
-    display: flex;
-    flex-direction: column;
-   
-   }
-   .apropos .right img{
-    width: 350px;
-    height: 300px;
-   }
-  
-   iframe{
-    width: 470px;
-    border-radius: 4px;
-   }
-   .container{
-    flex-wrap: wrap;
-    justify-content: center;
-   
-   }
- 
-#clients .nos-clients{
-    justify-content: center;
-    align-items: center;
-}
-}
-@media ( max-width:541px){
-    .container{
-        flex-wrap: wrap;
-    }   
-    .container form input[type="text"], .container form input[type="email"]{
-        width: 390px;
-    }
-    iframe{
-        width: 390px;
-    }
-    .container form textarea{
-        width: 390px;
-    }
-    .heros h1{
-        color: var(--white);
-        padding: 100px 30px 15px;
-        font-size: 25px;
-    }
-    .heros p{
-        color: var(--white);
-        padding: 20px 30px 15px;
-        font-size: 19px;
-    }
-    .apropos .left p{
-        font-size: 14px;
-    }
-    .footer-contenu{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    .link-reseau{
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-    }
-    .copyright{
-        border-bottom: 1px solid var(--white);
-    }
-    .contact{
-       
-  margin-left: 30px;
-
-    }
-}
-
-@media ( max-width:420px){
-    .container form input[type="text"], .container form input[type="email"]{
-        width: 300px;
-    }
-    .container form textarea{
-        width: 300px;
-    }
-    .heros h1{
-        color: var(--white);
-        padding: 100px 30px 15px;
-        font-size: 25px;
-    }
-    .heros p{
-        color: var(--white);
-        padding: 20px 30px 15px;
-        font-size: 19px;
-    }
-    .apropos .left p{
-        font-size: 14px;
-    } 
-    #services .nos-service .item p{
-        font-size: 10px;
-    }
-    #clients .nos-clients .client p{
-        font-size: 10px;
-    }
-    iframe{
-        width: 300px;
-    }
-    .apropos .right img{
-        width: 250px;
-        height: 200px;
-    }
-    .apropos .left p{
-        font-size: 12px;
-        line-height: normal;
-    }
-    .mail{
-        font-size: 12px;
-    }
-    .phone{
-        font-size: 12px;
-    }
-    .mail img{
-        width: 15px;
-    }
-    .phone img{
-        width: 15px;
-    }
-    .footer-contenu{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .link-reseau{
-        display: flex;
-        flex-direction: column;
-        
+      line-height: 0;
     }
 }
