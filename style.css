@@ -248,7 +248,7 @@ img[alt="etoile"]{
     justify-content: center;
     margin-top: 50px;
 }
-.container .right h4{
+.container .right p{
     color: var(--white);
     font-weight: normal;  
 }
@@ -344,11 +344,7 @@ footer{
     } 
  #clients .nos-clients{
      justify-content: center;
-     /* align-items: center; */
      width: 100%;
- }
- #clients .nos-clients .client{
-   
  }
  #heros h1{
     font-size: 23px; 
@@ -434,10 +430,10 @@ footer{
         font-size: 14px;
     } 
     #services .nos-service .item p{
-        font-size: 10px;
+        font-size: 13px;
     }
     #clients .nos-clients .client p{
-        font-size: 10px;
+        font-size: 13px;
     }
     iframe{
         width: 300px;
