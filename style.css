@@ -109,7 +109,7 @@ nav div img{
     text-align: left;
     padding-left: 20px;
     font-size: 14px;
-    color: #777777;
+    
 }
 #services .nos-service .item h2{
     margin-bottom: 6px;
@@ -142,7 +142,7 @@ nav div img{
     line-height: 30px;
     border-radius: 8px;  
     margin-bottom: 30px;
-    color: #777777;
+   
 }
 /* section clients */
 #clients{
@@ -175,8 +175,8 @@ nav div img{
     width: 380px;
 }
 #clients .nos-clients .client p{
-    font-size: 16px;
-    color: #777777;
+    font-size: 15px;
+    
 }
 #clients .nos-clients .client h2{
     font-size: 14px;
