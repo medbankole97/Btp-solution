@@ -105,8 +105,9 @@ nav div img{
     padding-left: 20px;
     font-size: 14px;
 }
-#services .nos-service .item h4{
+#services .nos-service .item h2{
     margin-bottom: 6px;
+    font-size: 14px;
 }
 /* section apropos de nous */
 #apropos{
@@ -168,6 +169,10 @@ nav div img{
 }
 #clients .nos-clients .client p{
     font-size: 14px;
+}
+#clients .nos-clients .client h2{
+    font-size: 14px;
+    margin-bottom: 6px;
 }
 .client::before, .client::after {
     content: '';
@@ -527,9 +532,11 @@ footer{
         opacity: 95%;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
         flex-direction: column;  
+        height: 200px;
+       
     }
     header nav .nav-links.responsive li {
-        margin: 15px 0;
+       margin-bottom: 30px;
     }
     nav .nav-links.responsive{
         display: flex;
