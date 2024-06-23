@@ -50,7 +50,7 @@ nav div img{
     height: auto;
 }
 .heros{
-    background-image: url('images/images/Section-Heros.png');
+    background-image: url('images/images/Section-Heros.webp');
      background-size: cover;
      background-repeat: no-repeat; 
      height: 70vh;
@@ -173,6 +173,8 @@ nav div img{
     text-align: center;
     background: var(--white);
     width: 380px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
 }
 #clients .nos-clients .client p{
     font-size: 15px;
@@ -182,22 +184,25 @@ nav div img{
     font-size: 14px;
     margin-bottom: 6px;
 }
-.client::before, .client::after {
+.client::before {
     content: '';
     position: absolute;
     background-color:var(--bg-header); 
-}
-.client::before {
     top: 0;
     left: 0;
-    width: 10px;
-    height: 50%;
+    width: 100px;
+    border-top-left-radius: 8px;
+    height: 10px;
 }
 .client::after {
+    content: '';
+    position: absolute;
+    background-color:var(--bg-header); 
     bottom: 0;
     right: 0;
-    width: 50%;
+    width: 100px;
     height: 10px;
+    border-bottom-right-radius: 8px;
 }
 img[alt="etoile"]{
     width: 25%;
@@ -319,6 +324,17 @@ footer{
 .link-reseau{
     display: flex;
     gap: 20px;
+    font-size: 20px;
+}
+img[alt="icon-twitter"]{
+    height: 15px;
+    margin-right: 5px;
+    width: 15px;   
+}
+img[alt="icon-linkedin"]{
+    height: 16px;
+    margin-right: 5px;
+    width: 15px;   
 }
 /* responsivite */
 .toggle_menu {
@@ -405,10 +421,8 @@ footer{
     .copyright{
         border-bottom: 1px solid var(--white);
     }
-    .contact{
-       
-  margin-left: 30px;
-
+    .contact{ 
+        margin-left: 30px;
     }
     .apropos .right img{
         width: 400px;
@@ -453,7 +467,7 @@ footer{
         width: 300px;
     }
     .apropos .right img{
-        width: 250px;
+        width: 300px;
         height: 200px;
     }
     .apropos .left p{
@@ -481,6 +495,22 @@ footer{
     .link-reseau{
         display: flex;
         flex-direction: column; 
+        font-size: 12px;
+    }
+    .apropos .left {
+        width: 300px;
+        height: 200px;
+    }
+    .copyright{
+        font-size:12px ;
+    }
+    img[alt="icon-twitter"]{
+        height: 12px;
+        width: 12px;
+    }
+    img[alt="icon-linkedin"]{
+        height: 12px;
+        width: 12px;
     }
 }
 @media (max-width:964px) {
