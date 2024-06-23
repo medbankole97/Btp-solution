@@ -47,7 +47,7 @@ nav .nav-links{
 }
 nav div img{
     width: 70px;
-    height: auto;
+    height: 70px;
 }
 .heros{
     background-image: url('images/images/Section-Heros.webp');
@@ -132,16 +132,16 @@ nav div img{
     padding: 50px;
 }
 .apropos .right img{
-    width: 500px;
+    width: 606px;
     border-radius: 8px;
-    height: 250px;
+    height: 344px;
 }
 .apropos .left {
     border: 1px solid #444;
     padding: 25px;
     line-height: 30px;
     border-radius: 8px;  
-    margin-bottom: 30px;
+    margin-bottom: 130px;
    
 }
 /* section clients */
@@ -205,8 +205,8 @@ nav div img{
     border-bottom-right-radius: 8px;
 }
 img[alt="etoile"]{
-    width: 25%;
-    height: auto;
+    width: 100px;
+    height: 20px;
 }
 .client h4{
     margin-bottom: 8px;
@@ -273,7 +273,7 @@ img[alt="etoile"]{
 }
 img[alt="mail"], img[alt="phone"]{
     width: 20px;
-    height: auto;
+    height: 20px;
 }
 iframe{
     width: 500px;
